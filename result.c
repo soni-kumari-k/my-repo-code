@@ -3,6 +3,7 @@ int main()
 {
 
     char name[30];
+    char sub[5];
     int marks[5];
     int i;
     int total=0;
@@ -16,12 +17,10 @@ int main()
     for ( i = 0; i < 5; i++)
     {
         printf("enter your subject: ");
-        scanf("%d", name);
+        scanf("%s", sub);
         printf("  enter yourmarks%d ",i+1);
-        scanf("%s",&marks[i]);
-
-     printf("\n marks: ");
         scanf("%d",&marks[i]);
+
         total=total+marks[i];
     }
     
